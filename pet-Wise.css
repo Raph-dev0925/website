@@ -1,0 +1,16 @@
+.header {
+    width: 100%;
+    background-color: aqua;
+}
+.left-side {
+    display: flex;
+    justify-content: baseline;
+    gap: 10px;
+}
+.top-logo {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 30px;
+}

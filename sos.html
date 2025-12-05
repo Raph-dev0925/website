@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sos</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .nav-bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #1b1b1b;
+                gap: 20px;
+                height: 90px;
+                padding-left: 30px;
+                padding-right: 50px;
+            }
+            .nav-item-1 h2 {
+                color: white;
+                margin: 0;
+            }
+            .indexes {
+                color: rgb(255, 81, 0);
+            }
+            .nav-item-2 h2 {
+                color: white;
+                margin: 0;
+            }
+            .nav-item-2 a h2:hover {
+                cursor: pointer;
+                color: rgb(255, 81, 0);
+                padding-bottom: 10px;
+                border-bottom: 2px solid rgb(255, 81, 0);
+            }
+            #language {
+                border-radius: 5px;
+                border: none;
+                background-color: #1d1b1b;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            #languages {
+                border-radius: 20px;
+                border: 1px solid #353333;
+                background-color: #353333;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 5px;
+                padding-right: 0;
+            }
+            #connect:hover{
+                background-color: white;
+                color: rgb(255, 81, 0);
+
+            }
+            #connect {
+                background-color: rgb(255, 81, 0);
+                color: white;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 20px;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .main-content {
+                padding: 5px;
+                background-color: #242222;
+                height: 100vh;
+                display: flex;
+   
+            }
+            .right-card {
+                width: 450px;
+                height: 400px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                background-color: #1b1b1b;
+
+            }
+            .card-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            .card-header-item h2 {
+                color: white;
+                margin: 0;
+                cursor: pointer;
+            }
+            .card-header-item h2:hover {
+                color: rgb(255, 81, 0);
+                border-bottom: 2px solid rgb(255, 81, 0);
+                margin: 0;
+                cursor: pointer;
+            }
+            .mini-header {
+                display: flex;
+                gap: 5px;
+                justify-content: space-around;
+            }
+            .mini-header-item {
+                border-bottom: 1px solid rgb(255, 81, 0);
+                margin-bottom: 0;
+                color: white;
+            }
+            .mini-div-1 {
+                border-radius: 10px;
+                background-color: #353333;
+                width: 445px;
+                height: 180px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div class="nav-item-1">
+                <h2>SoSoValue<span class="indexes">Indexes</span>(SSI)</h2>
+            </div>
+            <div class="nav-item-2">
+                <a href="buy.html" style="text-decoration: none;">
+                    <h2>Buy</h2>
+                </a>
+            </div>
+            <div class="nav-item-2">
+                <a href="buy.html" style="text-decoration: none;">
+                    <h2>Stake to earn</h2>
+                </a>
+            </div>
+            <div class="nav-item-2">
+                <a href="buy.html" style="text-decoration: none;">
+                    <h2>Reward</h2>
+                </a>
+            </div>
+            <div class="nav-item-2">
+                <a href="buy.html" style="text-decoration: none;">
+                    <h2>Refferal</h2>
+                </a>
+            </div>
+            <select id="language">
+                <option value="empty">Main</option>
+                <option value="empty">empty</option>
+                <option value="empty">empty</option>
+                <option value="empty">empty</option>
+                <option value="empty">empty</option>
+            </select>
+            <select id="languages">
+                <option value="empty">EN</option>
+                <option value="empty">empty</option>
+                <option value="empty">empty</option>
+                <option value="empty">empty</option>
+                <option value="empty">empty</option>
+            </select>
+            <button id="connect">Connect Wallet</button>
+        </div>
+        <div class="main-content">
+            <div class="right-card">
+                <div class="card-header">
+                    <div class="card-header-item">
+                        <h2>Stake</h2>
+                    </div>
+                    <div class="card-header-item">
+                        <h2>Lock Uni LP</h2>
+                    </div>
+                    <div class="card-header-item">
+                        <h2>Boost</h2>
+                    </div>
+                </div>
+                <div class="mini-div-1">
+                    <div class="mini-header">
+                        <div class="mini-header-item">
+                            <h4>Stake</h4>
+                        </div>
+                        <div class="mini-header-item">
+                            <h4>Unstake</h4>
+                        </div>
+                        <div class="mini-header-item">
+                            <h4>Withdraw</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
